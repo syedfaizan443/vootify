@@ -36,7 +36,7 @@ export default function VootCard({vote, imgurl, load,objname,keys}) {
                         setbtn(true)
                     }
                     
-                }}  disabled={btn}  type="button" className={`text-white  font-medium rounded-lg text-sm px-5 py-2.5 text-center `+style.btn}>{(btn)?"Voted":"Vote"}</button>
+                }}  disabled={btn}  type="button" className={`text-white  font-medium rounded-lg text-sm px-5 py-2.5 text-center `+((btn)?' bg-gray-600':style.btn)}>{(btn)?"Voted":"Vote"}</button>
                 </div>
             </div>
             }

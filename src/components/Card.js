@@ -14,7 +14,7 @@ export default function Card(props) {
                     <Image  src={props.img}   alt="My Image" height={100} width={100} ></Image>
                 </div>
                 <div className='h-1/6'>
-                <h5 className={`mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white `}>{props.name}</h5>
+                <h5 className={`mb-2 text-2xl font-bold tracking-tight  text-white `}>{props.name}</h5>
 
                 </div>
                <div className='h-1/6'>
