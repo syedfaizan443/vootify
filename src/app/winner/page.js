@@ -11,7 +11,6 @@ export default function page() {
       const fetchdata =async()=>{
           const data = await showWin();
           setWinner(data)
-          console.log(data);
       }
 
       fetchdata()

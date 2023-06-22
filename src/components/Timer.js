@@ -13,7 +13,6 @@ export default function Timer() {
 
   useEffect(() => {
 
-    console.log(" working hello there");
 
     const fetchTime = async () => {
       try {

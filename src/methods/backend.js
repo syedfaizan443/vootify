@@ -15,13 +15,10 @@ export const cockcheck = () => {
     const [name, value] = cookie.split('=');
 
     if (name === cockieName && value === cockieValue) {
-      console.log('Cookie found');
-      console.log(cookie);
       return true;
     }
   }
 
-  console.log('Cookie not found');
   return false;
 }
 

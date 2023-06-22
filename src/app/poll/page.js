@@ -32,11 +32,9 @@ export default function Poll() {
 
     const fetchData = async () => {
       try {
-        console.log("start");
 
         const voteResult = await showvotes();
 
-        console.log(voteResult.a);
 
         setVote((prevVote) => ({
           ...prevVote,
