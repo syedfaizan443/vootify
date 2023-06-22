@@ -3,7 +3,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import style from '../app/styles/progress.module.css';
 import { ThemeContext } from '@/context/ThemeContext';
-import { address } from '@/methods/backend';
 
 export default function Timer() {
   const [timeString, setTimeString] = useState('00:00:00');
@@ -13,10 +12,9 @@ export default function Timer() {
 
   useEffect(() => {
 
-    console.log(address+'watch')
     const fetchTime = async () => {
       try {
-        const response = await fetch(address+'watch');
+        const response = await fetch('https://backapp.vercel.app/watch');
         const data = await response.json();
         console.log(data);
         setTimeString(data);
