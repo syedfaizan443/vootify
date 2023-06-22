@@ -8,9 +8,12 @@ import { address } from '@/methods/backend';
 export default function Timer() {
   const [timeString, setTimeString] = useState('00:00:00');
   const {setwin} = useContext(ThemeContext)
+
   
 
   useEffect(() => {
+
+    console.log(address+'watch')
     const fetchTime = async () => {
       try {
         const response = await fetch(address+'watch');
