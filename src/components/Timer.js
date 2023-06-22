@@ -3,6 +3,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import style from '../app/styles/progress.module.css';
 import { ThemeContext } from '@/context/ThemeContext';
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
+
 
 export default function Timer() {
   const [timeString, setTimeString] = useState('00:00:00');
@@ -12,7 +15,7 @@ export default function Timer() {
 
   useEffect(() => {
 
-    console.log(process.env.NEXT_PUBLIC_SERVER+" hello there");
+    console.log(publicRuntimeConfig.BASE_URL+" hello there");
 
     const fetchTime = async () => {
       try {
