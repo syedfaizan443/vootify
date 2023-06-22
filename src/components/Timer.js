@@ -12,7 +12,7 @@ export default function Timer() {
 
   useEffect(() => {
 
-    console.log(process.env.local.NEXT_PUBLIC_SERVER+" hello");
+    console.log(NEXT_PUBLIC_SERVER+" hello");
 
     const fetchTime = async () => {
       try {
