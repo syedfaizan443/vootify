@@ -12,6 +12,8 @@ export default function Timer() {
 
   useEffect(() => {
 
+    console.log("hello");
+
     const fetchTime = async () => {
       try {
         const response = await fetch('https://backapp.vercel.app/watch');
