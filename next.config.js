@@ -5,6 +5,9 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+    env: {
+    BASE_URL: process.env.NEXT_PUBLIC_SERVER,
+  },
     images: {
         domains: ['firebasestorage.googleapis.com'],
       },
