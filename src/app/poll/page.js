@@ -48,7 +48,7 @@ export default function Poll() {
           b: voteResult.name2,
         }));
 
-        setLoad(false);
+        
       } catch (error) {
         console.error(error);
       }
@@ -58,6 +58,7 @@ export default function Poll() {
       try {
         const [_, imgList] = await Promise.all([fetchData(), getimage()]);
         setImages(imgList)
+        setLoad(false);
       } catch (error) {
         console.error(error);
       }
