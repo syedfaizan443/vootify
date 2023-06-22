@@ -1,0 +1,118 @@
+
+
+.myDiv {
+    color: white;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .progress_bar {
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, #060688 0%, #090979 25%, #00d4ff 50%, #060688 100%);
+    background-size: 500%;
+    animation: animate 20s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: 500% 0%;
+      box-shadow: 0px 0px 30px  #02d1ff;
+    }
+    80% {
+      
+      box-shadow: 0px 0px 30px  #af02ff;
+    }
+    100%{
+      background-position: 0% 0%;
+      box-shadow: 0px 0px 30px  #02d1ff;
+    }
+  }
+
+
+  .gif{
+    min-height: 100vh;
+    /* background:url('../../../public/assets/bg.gif'); */
+    background-color:black ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+ 
+
+ .box{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 0px 20px  #02d1ff;
+  animation: animate 20s linear infinite;
+}
+
+ .img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+ }
+
+ .glass{
+  background-color: rgba(1, 51, 252, 0.064);
+  backdrop-filter: blur(10px);
+  border-top:1px solid rgba(255, 255, 255, 0.4);
+  border-right:1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.089);
+  
+ }
+
+.txt h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+ .btn{
+    background-color: cyan;
+   
+ }
+
+ .btn:hover{
+  box-shadow: 0px 0px 10px cyan;
+ }
+
+ .textShadow{
+  text-shadow: 0px 0px 7px rgb(0, 238, 255);
+ }
+
+
+
+ .glass2{
+  background-color: rgba(1, 51, 252, 0.064);
+  backdrop-filter: blur(10px);
+  border-top:1px solid rgba(255, 255, 255, 0.4);
+  border-left:1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.089);
+  
+ }
+
+
+ .card {
+  width: 190px;
+  height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* homepag card */
