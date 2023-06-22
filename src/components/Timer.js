@@ -11,6 +11,9 @@ export default function Timer() {
   
 
   useEffect(() => {
+
+    console.log(address + '   hre');
+
     const fetchTime = async () => {
       try {
         const response = await fetch(address+'watch');
