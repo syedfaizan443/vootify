@@ -18,7 +18,7 @@ export default function Card(props) {
 
                 </div>
                <div className='h-1/6'>
-               <Link href={props.link}><button type="button" className={`text-white   font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-bold `+((props.link!='')?style.btn:' bg-gray-600')}>{(props.link!='')?"Click":"Locked"}</button></Link>
+               <Link href={props.link}><button type="button" className={`text-white   font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 font-bold `+((props.link!='')?style.btn:' bg-gray-600')}>{(props.link!='')?"Click":"Comming soon"}</button></Link>
                </div>
             </div>
     )
