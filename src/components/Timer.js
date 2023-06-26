@@ -18,7 +18,6 @@ export default function Timer() {
       try {
         const response = await fetch('https://backapp.vercel.app/watch');
         const data = await response.json();
-        console.log(data);
         setTimeString(data);
 
         
