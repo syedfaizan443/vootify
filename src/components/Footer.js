@@ -14,6 +14,9 @@ export default function Footer() {
             <Link href="/about" className="mr-4 hover:underline md:mr-6 ">About</Link>
         </li>
         <li>
+            <Link href="/disclaimer" className="mr-4 hover:underline md:mr-6">Disclaimer</Link>
+        </li>
+        <li>
             <Link href="/termsandconditions" className="mr-4 hover:underline md:mr-6">Terms and Conditions</Link>
         </li>
         <li>
