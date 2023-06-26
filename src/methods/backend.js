@@ -46,7 +46,7 @@ export const addcock =()=>{
 //addvote
 
 export const voteadd= async (key)=>{
-    console.log(key);
+    
         try{
             const response = fetch(address+'addvotes',{
                 method:'POST',
