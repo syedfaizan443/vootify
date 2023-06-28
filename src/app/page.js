@@ -1,10 +1,17 @@
-
+'use client'
 import Card from '@/components/Card'
 import { cardList } from './data/navdata'
 import CookiePage from '@/components/CookiePage'
+import { useEffect } from 'react'
 
 
 export default function Home() {
+
+  useEffect(()=>{
+    console.log("this is ads = "+process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID);
+    console.log(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID}`);
+},[])
+
   const temp=[]
   
 

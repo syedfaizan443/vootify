@@ -1,4 +1,3 @@
-'use client'
 
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -6,7 +5,6 @@ import { Navbar,Footer } from '../components'
 import { ThemeProviderr } from '@/context/ThemeContext'
 import Script from 'next/script'
 import Head from 'next/head'
-import { useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,10 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  useEffect(()=>{
-      console.log("this is ads = "+process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID);
-      console.log(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID}`);
-  },[])
+  
   return (
     <html lang="en">
       <Head>
