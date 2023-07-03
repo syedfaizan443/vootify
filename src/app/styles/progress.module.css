@@ -54,10 +54,33 @@
 
  .img{
   object-fit: cover;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
   border-radius: 10px;
  }
+
+ .img2{
+    object-fit: cover;
+    height: 100%;
+    /* width: 100px; */
+ }
+
+ .bgimg1{
+  background: url('/assets/bgimg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+ }
+
+ .bgimg2{
+  background: url('/assets/bgimg2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+ }
+
 
  .glass{
   background-color: rgba(1, 51, 252, 0.064);
@@ -113,3 +136,11 @@
 }
 
 /* homepag card */
+
+.txtAnime {
+ 
+  background-image: url('/assets/txtgif6.gif');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100%;
+}

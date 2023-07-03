@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useEffect , useState} from 'react'
-import WinnerCard from '@/components/WinnerCard'
-import { showWin } from '@/methods/backend'
+import WinnerCard from '@/app/components/WinnerCard'
+import { showWin } from '@/app/methods/backend'
 
 export default function page() {
   const [winner,setWinner] = useState([])
