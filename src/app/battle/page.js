@@ -18,6 +18,7 @@ const category = [
 
 export default function page() {
 
+
   const [winner, setWinner] = useState([false, false])
   const [images1, setImages1] = useState('/assets/qm.jpg')
   const [images2, setImages2] = useState('/assets/qm.jpg')
@@ -88,17 +89,26 @@ export default function page() {
 
   const fight = () => {
     if (data1.power > data2.power) {
-      setWinner([true, false])
       setImages1(data1.gif || images1)
+      setTimeout(()=>{
+        setWinner([true, false])
+      },1000)
+      
     }
     else if (data1.power == data2.power) {
-      setWinner([true, true])
       setImages2(data2.gif || images2)
       setImages1(data1.gif || images1)
+      setTimeout(()=>{
+        setWinner([true, true])
+      },1000)
+      
     }
     else {
-      setWinner([false, true])
       setImages2(data2.gif || images2)
+      setTimeout(()=>{
+        setWinner([false, true])
+      },1000)
+      
     }
     setBtn([false,false])
 
@@ -111,6 +121,8 @@ export default function page() {
     
     
   }
+
+  
 
   const reset = () => {
     setWinner([false, false])
@@ -161,7 +173,7 @@ function TabCard(props) {
     <h1 className='text-2xl text-white font-bold mt-5'>{props.name}</h1>
     <div className={`h-[16rem] min-w-[17rem] md:h-[18rem] sm:h-[18rem] md:w-5/6 sm:w-5/6 ` + style.box}>
 
-      <Image src={props.imgurl} className={style.img2} height={400} width={300} alt='character'></Image>
+      <Image src={props.imgurl}  className={style.img2} height={400} width={300} alt='character'></Image>
       <p className={`text-3xl font-bold  absolute bottom-5 bg-black text-cyan-500 px-4 rounded`}>{(props.win) ? 'WINNER' : ''}</p>
     </div>
     <button onClick={() => props.getDatafunc()} disabled={props.btnDisable} type="button" className={`text-white  font-medium rounded-lg text-sm px-5 py-2.5  text-center ` + ((props.btnDisable) ? 'bg-slate-500' : style.btn)}>Select</button>
