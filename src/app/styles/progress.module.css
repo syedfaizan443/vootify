@@ -54,8 +54,6 @@
 
  .img{
   object-fit: cover;
-  height: 400px;
-  width: 400px;
   border-radius: 10px;
  }
 
