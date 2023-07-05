@@ -23,7 +23,7 @@ export default function VootCard({vote, imgurl, load,objname,keys}) {
                 <h1 className='text-2xl text-white font-bold mt-5'>{objname}</h1>
                 <div className={`h-[16rem] min-w-[17rem] overflow-hidden md:h-[18rem] sm:h-[18rem] md:w-5/6 sm:w-5/6 `+style.box}>
                     
-                    <Image src={imgurl} className={style.img} height={400} width={400}></Image>
+                    <Image src={imgurl} className={style.img} height={300} width={300}></Image>
                    
                 </div>
                 <div>
