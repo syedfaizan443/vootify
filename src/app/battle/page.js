@@ -148,7 +148,7 @@ export default function page() {
       <div className=' h-[5rem] flex justify-center items-center'>
         <DropDownMenu selectedCountry={selectedCountry} setSelectedCountry={setSelectedCountry}></DropDownMenu>
       </div>
-      <div className=' border hidden md:grid md:grid-cols-2 md:grid-rows-1 gap-5  '>
+      <div className='  hidden md:grid md:grid-cols-2 md:grid-rows-1 gap-5  '>
         <TabCard id={0} btnDisable={btn[0]} getDatafunc={() => getData(1)} win={winner[0]} name={data1.name} imgurl={images1}></TabCard>
         <TabCard id={1} btnDisable={btn[1]} getDatafunc={() => getData(2)} win={winner[1]} name={data2.name} imgurl={images2}></TabCard>
       </div>
