@@ -54,7 +54,15 @@
 
  .img{
   object-fit: cover;
+  height: 400;
+  width: 400;
   border-radius: 10px;
+ }
+
+ .img1{
+  object-fit: cover;
+  height: auto;
+  width: auto;
  }
 
  .img2{
