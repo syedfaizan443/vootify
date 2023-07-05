@@ -21,7 +21,7 @@ export default function VootCard({vote, imgurl, load,objname,keys}) {
             {
                 load?<Loading></Loading>:<div className=' h-5/6   flex justify-between items-center flex-col'>
                 <h1 className='text-2xl text-white font-bold mt-5'>{objname}</h1>
-                <div className={`h-[16rem] min-w-[17rem] md:h-[18rem] sm:h-[18rem] md:w-5/6 sm:w-5/6 `+style.box}>
+                <div className={`h-[16rem] min-w-[17rem] overflow-hidden md:h-[18rem] sm:h-[18rem] md:w-5/6 sm:w-5/6 `+style.box}>
                     
                     <Image src={imgurl} className={style.img} height={400} width={400}></Image>
                    
