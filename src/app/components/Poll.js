@@ -25,49 +25,49 @@ export default function Poll() {
     key: 2
   }]
 
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   const cockResult = cockcheck();
-  //   setbtn(cockResult);
+    const cockResult = cockcheck();
+    setbtn(cockResult);
 
-  //   const fetchData = async () => {
-  //     try {
+    const fetchData = async () => {
+      try {
 
-  //       const voteResult = await showvotes();
+        const voteResult = await showvotes();
 
 
-  //       setVote((prevVote) => ({
-  //         ...prevVote,
-  //         a: voteResult.a,
-  //         b: voteResult.b,
-  //       }));
+        setVote((prevVote) => ({
+          ...prevVote,
+          a: voteResult.a,
+          b: voteResult.b,
+        }));
 
-  //       setNames((prevName) => ({
-  //         ...prevName,
-  //         a: voteResult.name1,
-  //         b: voteResult.name2,
-  //       }));
+        setNames((prevName) => ({
+          ...prevName,
+          a: voteResult.name1,
+          b: voteResult.name2,
+        }));
 
         
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
-  //   const fetchDataAndImage = async () => {
-  //     try {
-  //       const [_, imgList] = await Promise.all([fetchData(), getimage()]);
-  //       setImages(imgList)
-  //       setLoad(false);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
+    const fetchDataAndImage = async () => {
+      try {
+        const [_, imgList] = await Promise.all([fetchData(), getimage()]);
+        setImages(imgList)
+        setLoad(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
-  //   fetchDataAndImage();
+    fetchDataAndImage();
 
 
-  // }, [])
+  }, [])
 
 
 
